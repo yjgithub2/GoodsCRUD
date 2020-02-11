@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    
+    <servlet>
+        <servlet-name>selectAll</servlet-name>
+        <servlet-class>servlet.SelectAll</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>selectAll</servlet-name>
+        <url-pattern>/selectAll</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>addGoods</servlet-name>
+        <servlet-class>servlet.AddGoods</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addGoods</servlet-name>
+        <url-pattern>/addGoods</url-pattern>
+    </servlet-mapping>
+    <!--删除-->
+    <servlet>
+        <servlet-name>deleteGoods</servlet-name>
+        <servlet-class>servlet.DeleteGoods</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteGoods</servlet-name>
+        <url-pattern>/deleteGoods</url-pattern>
+    </servlet-mapping>
+    <!--修改：编辑页面-->
+    <servlet>
+        <servlet-name>updateEdit</servlet-name>
+        <servlet-class>servlet.UpdateEdit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateEdit</servlet-name>
+        <url-pattern>/updateEdit</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>updateSave</servlet-name>
+        <servlet-class>servlet.UpdateSave</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateSave</servlet-name>
+        <url-pattern>/updateSave</url-pattern>
+    </servlet-mapping>
+</web-app>
